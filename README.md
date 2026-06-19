@@ -2,6 +2,9 @@
 
 Sticker Studio is a responsive web application built using HTML, CSS, and JavaScript. It allows users to browse sticker collections through a clean and user-friendly interface.
 
+## Screenshot
+![Sticker Studio Home](Assets/WebPage.png)
+
 ## Features
 
 * Responsive design for mobile and desktop devices
