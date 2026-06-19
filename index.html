@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Studio</title>
+    <link rel="stylesheet" href="StickerStudio.css">
+    <link rel="icon" type="image/png" href="Assets/ICON/TitleImage.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+</head>
+<body >
+    <firstpage class="firstpage" >
+         <nav class="navbar">
+     <div class="navdiv">
+        
+        
+        <div class="logo">
+          
+          <a href="index.html"><small class="Icon-icon"> S </small> StickerStudio</a>
+        </div>
+
+         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        
+        
+        
+        <ul id="menu" >
+            
+            <li><a href="#">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+              <li><a  class="open-btn" id="open">Sign In </a></li>
+             <!-- <li ><a id="sign-btn" href="popup.html">SignIn</a></li> -->
+               
+        </ul>
+        
+     </div> 
+
+     <section class="signInUp">
+      
+<!-- Popup -->
+<div class="overlay" id="overlay">
+  <div class="card" id="card">
+    <div class="header">
+  <div class="brand">
+    <img  id="popupimgbrand" src="Assets/ICON/TitleImage.jpg" width="20px">
+     <h3>StickerStudio</h3></div>
+  <div class="title" id="dlg-title">Sign In</div>
+</div>
+
+    <form id="form">
+      <div class="field  ">
+        <label  class="label" for="email">Email</label>
+        <input id="email" class="input" type="email" placeholder="Enter your email">
+      </div>
+      <div class="field">
+        <label class="label" for="password">Password</label>
+        <input id="password" class="input" type="password" placeholder="Enter your password">
+      </div>
+      <div class="field" id="confirm-wrap" >
+        <label class="label">Confirm Password</label>
+        <input id="confirm" class="input" type="password" placeholder="Confirm your password">
+      </div>
+      <div class="message" id="formMessage"></div>
+      <div class="note" id="signupNote">Password must be at least 6 characters long.</div>
+      <div class="actions">
+        <button type="submit" class="btn" id="submitBtn">Sign In</button>
+      </div>
+      <div class="linkrow">
+        <span id="toggleText">Don’t have an account?</span>
+        <a class="link" id="toggleLink">Sign Up</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+     </section>
+   
+
+    </nav>
+ <main id="collection" class="mainmenu">
+    <div class="Pro-parent">
+        
+
+        <div class="child child-1" onclick="openPopup('Assets/image1.jpg', 'Color Burst sticker', '🩶56', '₹80')">
+  <img src="Assets/image1.jpg">
+
+   
+
+</div>
+
+<div class="child child-2" onclick="openPopup('Assets/image2.jpg', 'Minion Selfie Sticker', '🩶60', '₹45')">
+  <img src="Assets/image2.jpg">
+</div>
+
+<div class="child child-3" onclick="openPopup('Assets/image3.jpg', 'Chin Tapak Dum Dum ', '🩶87', '₹29')">
+  <img src="Assets/image3.jpg">
+</div>
+
+<div class="child child-4" onclick="openPopup('Assets/image4.jpg', 'Pure Coffee Fix Sticker', '🩶68', '₹49')">
+  <img src="Assets/image4.jpg">
+</div>
+
+<div class="child child-5" onclick="openPopup('Assets/image5.jpg', 'Pirate King Luffy Sticker', '🩶87', '₹56')">
+  <img src="Assets/image5.jpg">
+</div>
+
+<div class="child child-6" onclick="openPopup('Assets/image6.jpg', 'Retro Coder Sticker', '🩶44', '₹88')">
+  <img src="Assets/image6.jpg">
+</div>
+
+<div class="child child-7" onclick="openPopup('Assets/image7.jpg', 'Pro Gamer Sticker', '🩶66', '₹40')">
+  <img src="Assets/image7.jpg">
+</div>
+
+<div class="child child-8" onclick="openPopup('Assets/image8.jpg', 'Hanging Spidey Sticker', '🩶89', '₹49')">
+  <img src="Assets/image8.jpg">
+</div>
+
+<div class="child child-9" onclick="openPopup('Assets/image9.jpg', 'Dev Rule #1 Sticker', '🩶102', '₹89')">
+  <img src="Assets/image9.jpg">
+</div>
+
+
+<!-- Video -->
+
+
+<div class="add1 adds">
+  <video class="adds" loop muted autoplay >
+      <source src="Assets/Video2.mp4" type="video/mp4">
+  </video>
+   <a href="https://amzn.in/d/87UcHde" target="_blank"   class="visit-btn"><b><b>↗</b> Visit Site</b></a>
+</div>
+
+<!-- Video -->
+
+
+
+<div class="child child-10" onclick="openPopup('Assets/image10.jpg', 'Code Ninja Sticker', '🩶78', '₹50')">
+  <img src="Assets/image10.jpg">
+</div>
+
+<div class="child child-11" onclick="openPopup('Assets/image11.jpg', 'Classic Meme Kid Sticker', '🩶70', '₹49')">
+  <img src="Assets/image11.jpg">
+</div>
+
+<div class="child child-12" onclick="openPopup('Assets/image12.jpg', 'Ctrl Everything Sticker', '🩶92', '₹55')">
+  <img src="Assets/image12.jpg">
+</div>
+
+<div class="child child-13" onclick="openPopup('Assets/image13.jpg', 'GOAT Messi Sticker', '🩶201', '₹180')">
+  <img src="Assets/image13.jpg">
+</div>
+
+<div class="child child-14" onclick="openPopup('Assets/image14.jpg', 'Mad Genius Sticker', '🩶87', '₹124')">
+  <img src="Assets/image14.jpg">
+</div>
+
+<div class="child child-15" onclick="openPopup('Assets/image15.jpg', 'Desi Chappal Attack Sticker', '🩶200', '₹96')">
+  <img src="Assets/image15.jpg">
+</div>
+
+<div class="child child-16" onclick="openPopup('Assets/image16.jpg', 'Jerry Smiles Sticker', '🩶110', '₹67')">
+  <img src="Assets/image16.jpg">
+</div>
+
+<div class="child child-17" onclick="openPopup('Assets/image17.jpg', 'Dexter Lab Chaos Sticker', '🩶87', '₹50')">
+  <img src="Assets/image17.jpg">
+</div>
+
+<div class="child child-18" onclick="openPopup('Assets/image18.jpg', 'Tom Tears Sticker', '🩶45', '₹42')">
+  <img src="Assets/image18.jpg">
+</div>
+
+<div class="child child-19" onclick="openPopup('Assets/image19.jpg', 'Wow Doge Sticker', '🩶77', '₹51')">
+  <img src="Assets/image19.jpg">
+</div>
+
+<div class="child child-20" onclick="openPopup('Assets/image20.jpg', 'Ghost Call Sticker', '🩶89', '₹51')">
+  <img src="Assets/image20.jpg">
+</div>
+
+<div class="child child-21" onclick="openPopup('Assets/image21.png', 'Sticky Reminder Sticker', '🩶41', '₹44')">
+  <img src="Assets/image21.png">
+</div>
+
+<div class="child child-22" onclick="openPopup('Assets/image22.jpg', 'Ctrl Uday Sticker', '🩶99', '₹80')">
+  <img src="Assets/image22.jpg">
+</div>
+
+<div class="child child-23" onclick="openPopup('Assets/image23.jpg', 'Low Battery Mode Sticker', '🩶47', '₹50')">
+  <img src="Assets/image23.jpg">
+</div>
+
+<div class="child child-24" onclick="openPopup('Assets/image24.jpg', 'Girl Power Sticker', '🩶87', '₹78')">
+  <img src="Assets/image24.jpg">
+</div>
+
+<div class="child child-25" onclick="openPopup('Assets/image25.jpg', 'Uno Reverse Attack! Sticker', '🩶87', '₹40')">
+  <img src="Assets/image25.jpg">
+</div>
+
+<div class="child child-26" onclick="openPopup('Assets/image26.jpg', 'Wednesday Addams  ', '🩶254', '₹98')">
+  <img src="Assets/image26.jpg">
+</div>
+
+<div class="child child-27" onclick="openPopup('Assets/image27.jpg', 'MasterCube Sticker', '🩶98', '₹45')">
+  <img src="Assets/image27.jpg">
+</div>
+
+<div class="child child-28" onclick="openPopup('Assets/image28.jpg', 'Rick Basket Sticker', '🩶80', '₹87')">
+  <img src="Assets/image28.jpg">
+</div>
+
+<div class="child child-29" onclick="openPopup('Assets/image29.jpg', 'DiCaprio Sticker', '🩶75', '₹48')">
+  <img src="Assets/image29.jpg">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+    <br>
+    <br>
+
+  </main>
+
+   <div id="popup" onclick="closePopup()">
+   <div class="popup-content" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <img id="popup-img" src="">
+    
+    <div class="min">
+      
+    <h3 id="popup-name" class="name"></h3>
+     <p id="popup-like" class="like"></p>
+    <p id="popup-price" class="price"></p>
+
+     
+
+    </div>
+     <div class="btn-pop-color">
+      <a class="btn-pop" href="https://razorpay.com/qr-code/">Buy Now</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a class="btn-pop"  href="#">Add to cart</a>
+    </div>
+
+   
+   
+   
+  </div> 
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</firstpage>
+
+
+
+
+  
+
+
+    
+
+
+
+
+
+
+
+<footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>WHY CHOOSE US?</h1>
+    <div class="content">
+      
+        
+        <div class="left">
+          <video class="us" loop muted autoplay >
+                 <source src="Assets/Video1.mp4" type="video/mp4">
+         </video>
+            
+        </div>
+        <!-- <img  class="sale" src="Assets/Saleoffer.png"> -->
+
+        
+        <div class="right">
+            <div class="feature"><div class="icon-box"><i class="fa-solid fa-circle-check"></i></div><span>Premium Quality</span></div>
+            <div class="feature"><div class="icon-box"><i class="fa-solid fa-droplet"></i></div><span>Industry Innovation</span></div>
+            <div class="feature"><div class="icon-box"><i class="fa-solid fa-star"></i></div><span>Excellent Service</span></div>
+            <div class="feature"><div class="icon-box"><i class="fa-solid fa-heart"></i></div><span>Designs You Love</span></div>
+            <div class="feature"><div class="icon-box"><i class="fa-solid fa-paper-plane"></i></div><span>Over 3 Million+ Stickers Sold</span></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+
+<!-- CARD -->
+
+<div id="contact" class="emailbox">
+
+<h1 class="fresh">Discover Fresh Picks for Every Season!</h1>
+  <p class="fresh1">Be the first to explore our latest arrivals - style, comfort, and creativity in every piece.</p>
+
+ <div class="Contain">
+  
+    <input class="contactemail" type="email" name="email" id="emailInput"  placeholder="Email">
+    
+
+  <button  id="submitBtn" onclick="clearEmail(event)">→</button>
+</div> 
+
+
+
+
+
+<div id="errorMsg" class="error"></div>
+
+
+
+</div>
+
+
+
+
+
+</footer>
+
+<footer id="about"  class="footerr">
+  <div class="footer-container">
+    <!-- Logo & About -->
+      <h2 class="logo-below">StickerStudio</h2>
+    <div class="footer-section-about">
+     
+      <p id="slowgun" >There's a sticker for that!? Yes,<br> there's a sticker for everyone.</p>
+      <p class="made-in"><a >Made with ♥ in India</a></p>
+      <p class="contact contact1">+91 8446XXXXXX</p>
+      <p class="contact">sticker@stickerstudio.com</p>
+      <p class="address">Infinity Loop, Quantum District,<br>  Universe-616, Multiverse Sector Ω-42,<br> 22nd Century
+      </p>
+    </div>
+
+  
+    <div class="footer-section">
+      <h3>QUICK LINKS</h3>
+      <ul>
+        <li><a href="#">Stickers</a></li>
+        <li><a href="#">Mini Sticker Sheets</a></li>
+        <li><a href="#">Laptop Skins</a></li>
+        <li><a href="#">Credit Card Skins</a></li>
+        <li><a href="#">About Us</a></li>
+        
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>INFORMATION & SUPPORT</h3>
+      <ul>
+        <li><a href="#">Track Your Order</a></li>
+        <li><a href="#">Frequently Asked Questions</a></li>
+       
+        <li><a href="#">Bulk & Custom Orders</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  <div class="social-icons">
+
+
+       <a ><img src="Assets/ICON/facebook.png" alt="Instagram"></a>
+      <a ><img src="Assets/ICON/instagram.png" alt="Instagram"></a>
+       <a ><img src="Assets/ICON/youtube.png" alt="Instagram"></a>
+       <a ><img src="Assets/ICON/whatsapp.png" alt="Instagram"></a>
+
+
+             
+
+
+    </div>
+    
+  
+
+  
+
+  <div class="footer-links">
+       © 2025, Sticker Studio · 
+        <a href="#">Refund policy</a> · 
+        <a href="#">Privacy policy</a> · 
+        <a href="#">Terms of service</a> · 
+        <a href="#">Shipping policy</a>
+  </div>
+
+
+</footer>
+
+   
+
+<script src="StickerStudio.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
