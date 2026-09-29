@@ -27,7 +27,7 @@ Sticker Studio is a responsive web application built using HTML, CSS, and JavaSc
 * User authentication
 * Search functionality
 * Favorites system
-* Backend integration
-* Database support
+
+
 
 
